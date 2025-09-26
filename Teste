@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Uber Guincho - Funcional</title>
+    <title>Uber Guincho</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
@@ -366,7 +366,6 @@
     </nav>
 
     <script>
-        // Initialize localStorage
         if (!localStorage.getItem('providers')) {
             localStorage.setItem('providers', JSON.stringify([]));
         }
@@ -405,7 +404,6 @@
             
             goToStep(3);
             
-            // Show the "Guincho a caminho!" alert immediately
             setTimeout(() => {
                 document.getElementById('enRouteModal').classList.remove('hidden');
             }, 300);
@@ -478,7 +476,6 @@
             providersList.innerHTML = html;
         }
 
-        // Initialize with sample data
         document.addEventListener('DOMContentLoaded', function() {
             document.getElementById('vehicleModel').value = 'Gol';
             document.getElementById('vehiclePlate').value = 'ABC1234';
